@@ -3,8 +3,11 @@ package tbopensdk
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/mimicode/tksdk/tbopensdk/response/tbkdgmaterialoptionalupgrade"
+	"github.com/mimicode/tksdk/tbopensdk/response/tbkdgmaterialrecommend"
 	"io/ioutil"
 	"os"
+	"strconv"
 	"strings"
 	"testing"
 
@@ -74,6 +77,7 @@ func init() {
 				Tb struct {
 					AppKey     string `json:"app_key"`
 					AppSecret  string `json:"app_secret"`
+					AdzoneId   string `json:"adzone_id"`
 					SessionKey string `json:"session_key"`
 					Pid        string `json:"pid"`
 					RelationID string `json:"relation_id"`
@@ -86,6 +90,7 @@ func init() {
 				sessionKey = data.Tb.SessionKey
 				pid.RelationID = data.Tb.RelationID
 				pid.SpecialID = data.Tb.SpecialID
+				pid.AdzoneID = data.Tb.AdzoneId
 				split := strings.Split(strings.TrimPrefix(data.Tb.Pid, "mm_"), "_")
 				if len(split) == 3 {
 					pid.AccountID = split[0]
@@ -1322,6 +1327,65 @@ func Test_TbkScGeneralLinkConvertRequest(t *testing.T) {
 		result := getResponse.(*taobaotbkscgenerallinkconvert.Response)
 
 		fmt.Println(result.Body)
+
+	}
+}
+
+func TestTbkMaterialRecommend(t *testing.T) {
+
+	//初始化TopClient
+	client := &TopClient{}
+	client.Init(appKey, appSecret, sessionKey)
+
+	//初始化请求接口信息
+	getRequest := &request2.TbkDgMaterialRecommendRequest{}
+	getRequest.AddParameter("adzone_id", pid.AdzoneID)
+	getRequest.AddParameter("material_id", "86594")
+
+	getRequest.AddParameter("page_size", "20")
+	getRequest.AddParameter("page_no", "1")
+
+	getRequest.AddParameter("get_topn_rate", "1")
+	//初始化结果类型
+	var getResponse DefaultResponse = &tbkdgmaterialrecommend.Response{}
+	//执行请求接口得到结果
+	err := client.Exec(getRequest, getResponse)
+	if err != nil {
+		t.Log(err)
+	} else {
+		result := getResponse.(*tbkdgmaterialrecommend.Response)
+
+		fmt.Println(result.TbkDgMaterialRecommendResult.ResultList.MapData)
+
+	}
+
+}
+
+func TestTbkDgMaterialOptionalUpgrade(t *testing.T) {
+
+	//初始化TopClient
+	client := &TopClient{}
+	client.Init(appKey, appSecret, "")
+
+	//初始化请求接口信息
+	getRequest := &request2.TbkDgMaterialOptionalUpgradeRequest{}
+	getRequest.AddParameter("adzone_id", pid.AdzoneID)
+
+	getRequest.AddParameter("page_size", "10")
+	getRequest.AddParameter("q", "手机壳")
+	getRequest.AddParameter("has_coupon", strconv.FormatBool(true))
+	//getRequest.AddParameter("get_topn_rate", "1")
+
+	//初始化结果类型
+	var getResponse DefaultResponse = &tbkdgmaterialoptionalupgrade.Response{}
+	//执行请求接口得到结果
+	err := client.Exec(getRequest, getResponse)
+	if err != nil {
+		t.Log(err)
+	} else {
+		result := getResponse.(*tbkdgmaterialoptionalupgrade.Response)
+
+		fmt.Println(result.TbkDgMaterialOptionalUpgradeResult.ResultList.MapData)
 
 	}
 }

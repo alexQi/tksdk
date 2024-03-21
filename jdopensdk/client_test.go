@@ -54,7 +54,7 @@ func GetClient() *TopClient {
 func TestJdUnionOpenGoodsJingfenQueryRequest(t *testing.T) {
 	client := GetClient()
 	getRequest := &request.JdUnionOpenGoodsJingfenQueryRequest{}
-	getRequest.AddParameter("360buy_param_json", `{"goodsReq":{"eliteId":"9999","pid":"","sortName":"commission","sort":"desc","pageSize":"50","pageIndex":"1"}}`)
+	getRequest.AddParameter("360buy_param_json", `{"goodsReq":{"eliteId":"22","pid":"","sortName":"commission","sort":"desc","pageSize":"50","pageIndex":"1"}}`)
 	var getResponse DefaultResponse = &jdunionopengoodsjingfenquery.Response{}
 	if err := client.Exec(getRequest, getResponse); err != nil {
 		fmt.Println(err)
