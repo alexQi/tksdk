@@ -1,8 +1,8 @@
 package suningnetallianceriskmanagementorderquery
 
 import (
-	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/snopensdk/response"
 )
 
 // suning.netalliance.riskmanagementorder.query 风控订单查询

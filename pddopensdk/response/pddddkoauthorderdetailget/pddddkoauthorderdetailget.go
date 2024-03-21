@@ -1,8 +1,8 @@
 package pddddkoauthorderdetailget
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.oauth.order.detail.get获取订单详情

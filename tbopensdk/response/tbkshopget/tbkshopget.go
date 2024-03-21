@@ -1,16 +1,16 @@
 package tbkshopget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.shop.get( 淘宝客店铺查询 )
+// taobao.tbk.shop.get( 淘宝客店铺查询 )
 type Response struct {
 	response.TopResponse
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

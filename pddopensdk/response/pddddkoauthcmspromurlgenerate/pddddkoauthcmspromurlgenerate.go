@@ -1,8 +1,8 @@
 package pddddkoauthcmspromurlgenerate
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.oauth.cms.prom.url.generate生成商城推广链接接口

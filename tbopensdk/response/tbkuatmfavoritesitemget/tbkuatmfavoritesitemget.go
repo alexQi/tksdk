@@ -1,16 +1,16 @@
 package tbkuatmfavoritesitemget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.uatm.favorites.item.get( 获取淘宝联盟选品库的宝贝信息 )
+// taobao.tbk.uatm.favorites.item.get( 获取淘宝联盟选品库的宝贝信息 )
 type Response struct {
 	response.TopResponse
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

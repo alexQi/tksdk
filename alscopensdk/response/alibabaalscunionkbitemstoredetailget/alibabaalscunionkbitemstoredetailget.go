@@ -1,9 +1,9 @@
 package alibabaalscunionkbitemstoredetailget
 
 import (
-	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/alexQi/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.item.store.detail.get( 本地联盟口碑门店详情 )

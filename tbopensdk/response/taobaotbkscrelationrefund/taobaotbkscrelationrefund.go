@@ -1,17 +1,17 @@
 package taobaotbkscrelationrefund
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.sc.relation.refund( 淘宝客-服务商-维权退款订单查询 )
+// taobao.tbk.sc.relation.refund( 淘宝客-服务商-维权退款订单查询 )
 type Response struct {
 	response.TopResponse
 	TbkScRelationRefundResponse TbkScRelationRefundResponse `json:"tbk_sc_relation_refund_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

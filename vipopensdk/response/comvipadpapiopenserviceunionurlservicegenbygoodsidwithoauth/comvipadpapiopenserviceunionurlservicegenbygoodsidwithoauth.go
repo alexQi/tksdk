@@ -1,17 +1,17 @@
 package comvipadpapiopenserviceunionurlservicegenbygoodsidwithoauth
 
 import (
-	response2 "alexQi/tksdk/vipopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/vipopensdk/response"
 )
 
-//com.vip.adp.api.open.service.UnionUrlService 根据商品id生成联盟链接-需要oauth授权
+// com.vip.adp.api.open.service.UnionUrlService 根据商品id生成联盟链接-需要oauth授权
 type Response struct {
 	response2.TopResponse
 	Result Result `json:"result"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

@@ -1,17 +1,17 @@
 package suningnetallianceorderget
 
 import (
-	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/snopensdk/response"
 )
 
-//suning.netalliance.order.get 网盟订单信息单独查询
+// suning.netalliance.order.get 网盟订单信息单独查询
 type Response struct {
 	response2.TopResponse
 	SnResponseContent SnResponseContent `json:"sn_responseContent"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

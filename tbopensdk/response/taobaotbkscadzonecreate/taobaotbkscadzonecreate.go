@@ -1,8 +1,8 @@
 package taobaotbkscadzonecreate
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.adzone.create( 淘宝客-服务商-创建推广者位 )

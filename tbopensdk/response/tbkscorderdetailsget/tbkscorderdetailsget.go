@@ -1,8 +1,8 @@
 package tbkscorderdetailsget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.order.details.get( 淘宝客【服务商】所有订单查询 )

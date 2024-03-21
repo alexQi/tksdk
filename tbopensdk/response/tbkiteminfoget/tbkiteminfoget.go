@@ -3,7 +3,7 @@ package tbkiteminfoget
 import (
 	"encoding/json"
 
-	"alexQi/tksdk/tbopensdk/response"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // 淘宝客商品详情查询（简版） 免费 不需要授权

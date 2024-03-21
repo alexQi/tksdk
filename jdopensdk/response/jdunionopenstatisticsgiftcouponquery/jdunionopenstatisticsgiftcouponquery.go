@@ -1,8 +1,8 @@
 package jdunionopenstatisticsgiftcouponquery
 
 import (
-	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.statistics.giftcoupon.query 礼金效果数据

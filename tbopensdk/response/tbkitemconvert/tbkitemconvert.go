@@ -1,17 +1,17 @@
 package tbkitemconvert
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.item.convert( 淘宝客商品链接转换 )
+// taobao.tbk.item.convert( 淘宝客商品链接转换 )
 type Response struct {
 	response.TopResponse
 	TbkItemConvertResult Result `json:"tbk_item_convert_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

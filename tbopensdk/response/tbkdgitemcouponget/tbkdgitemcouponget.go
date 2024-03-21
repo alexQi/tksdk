@@ -1,8 +1,8 @@
 package tbkdgitemcouponget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.dg.item.coupon.get( 好券清单API【导购】 )

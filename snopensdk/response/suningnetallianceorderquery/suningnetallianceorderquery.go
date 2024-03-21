@@ -1,8 +1,8 @@
 package suningnetallianceorderquery
 
 import (
-	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/snopensdk/response"
 )
 
 // suning.netalliance.order.query 网盟订单信息批量查询

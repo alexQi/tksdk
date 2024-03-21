@@ -1,17 +1,17 @@
 package tbkitemcouponget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.item.coupon.get( 单品加券检索api )
+// taobao.tbk.item.coupon.get( 单品加券检索api )
 type Response struct {
 	response.TopResponse
 	TbkItemCouponGetResult Result `json:"tbk_item_coupon_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

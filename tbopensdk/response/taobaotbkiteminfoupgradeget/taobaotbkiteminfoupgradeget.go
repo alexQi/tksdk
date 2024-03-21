@@ -3,7 +3,7 @@ package taobaotbkiteminfoupgradeget
 import (
 	"encoding/json"
 
-	"alexQi/tksdk/tbopensdk/response"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.item.info.upgrade.get( 淘宝客-公用-淘宝客商品详情查询升级版（简易版） )

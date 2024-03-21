@@ -1,8 +1,8 @@
 package tbkdgnewuserordersum
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.dg.newuser.tborder.sum( 拉新活动汇总API--导购 )

@@ -1,8 +1,8 @@
 package taobaotbkdgvegastljreport
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.dg.vegas.tlj.report( 淘宝客-推广者-淘礼金效果数据 )

@@ -1,7 +1,7 @@
 package request
 
 import (
-	utils "alexQi/tksdk/utils"
+	utils "github.com/alexQi/tksdk/utils"
 	"net/url"
 )
 

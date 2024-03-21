@@ -1,9 +1,9 @@
 package alibabaalscunionkbbbtitempromotionfilterlist
 
 import (
-	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/alexQi/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.bbt.item.promotion.filter.list( 本地生活爆爆团选品筛选集合 )

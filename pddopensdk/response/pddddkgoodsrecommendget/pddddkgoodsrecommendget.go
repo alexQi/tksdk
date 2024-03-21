@@ -1,17 +1,17 @@
 package pddddkgoodsrecommendget
 
 import (
-	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/pddopensdk/response"
 )
 
-//pdd.ddk.goods.recommend.get多多进宝商品推荐API
+// pdd.ddk.goods.recommend.get多多进宝商品推荐API
 type Response struct {
 	response2.TopResponse
 	GoodsBasicDetailResponse GoodsBasicDetailResponse `json:"goods_basic_detail_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

@@ -1,8 +1,8 @@
 package pddddkoauthgoodssearch
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.oauth.goods.search多多进宝商品查询

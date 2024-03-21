@@ -1,8 +1,8 @@
 package pddddkoauthgoodsdetail
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.oauth.goods.detail多多进宝商品详情查询

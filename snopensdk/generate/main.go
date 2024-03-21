@@ -1,8 +1,8 @@
 package main
 
 import (
-	"alexQi/tksdk/utils"
 	"fmt"
+	"github.com/alexQi/tksdk/utils"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -119,7 +119,7 @@ func createAPI(apiRequest ApiInfo) {
 	}
 	//"taobaoopensdk/utils"
 	APIPARAMCHECK := createMustCheck(apiRequest.CHECKFIELDS)
-	UTIL := `"alexQi/tksdk/utils"`
+	UTIL := `"github.com/alexQi/tksdk/utils"`
 	DIRNAME := strings.Replace(apiRequest.APIORGNAME, ".", "", -1)
 	FILENAME := DIRNAME + ".go"
 

@@ -1,8 +1,8 @@
 package pddddkcashgiftstatusupdate
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.cashgift.status.update多多礼金状态更新

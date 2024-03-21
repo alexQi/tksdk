@@ -1,17 +1,17 @@
 package tbktpwdcreate
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.tpwd.create( 淘宝客淘口令 )
+// taobao.tbk.tpwd.create( 淘宝客淘口令 )
 type Response struct {
 	response.TopResponse
 	TbkTpwdCreateResult Result `json:"tbk_tpwd_create_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

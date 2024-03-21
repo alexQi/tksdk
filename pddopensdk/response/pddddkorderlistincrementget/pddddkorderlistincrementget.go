@@ -1,8 +1,8 @@
 package pddddkorderlistincrementget
 
 import (
-	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // pdd.ddk.order.list.increment.get（最后更新时间段增量同步推广订单信息）

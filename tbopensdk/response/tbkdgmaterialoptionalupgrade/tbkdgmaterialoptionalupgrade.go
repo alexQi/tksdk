@@ -1,8 +1,8 @@
 package tbkdgmaterialoptionalupgrade
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.dg.material.optional.upgrade( 通用物料搜索API（导购） )

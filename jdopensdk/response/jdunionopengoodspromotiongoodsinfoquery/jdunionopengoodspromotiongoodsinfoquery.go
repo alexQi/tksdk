@@ -1,8 +1,8 @@
 package jdunionopengoodspromotiongoodsinfoquery
 
 import (
-	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.goods.promotiongoodsinfo.query 通过SKUID查询推广商品

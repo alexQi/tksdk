@@ -1,8 +1,8 @@
 package tbksccouponrealtimerecommend
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.coupon.realtime.recommend( 好券直播API【社交】 )

@@ -3,7 +3,7 @@ package taobaotbksctpwdconvert
 import (
 	"encoding/json"
 
-	"alexQi/tksdk/tbopensdk/response"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.tpwd.convert( 淘宝客-服务商-淘口令解析&转链 )

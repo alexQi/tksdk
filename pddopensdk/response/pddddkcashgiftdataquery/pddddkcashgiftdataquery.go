@@ -1,8 +1,8 @@
 package pddddkcashgiftdataquery
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.cashgift.data.query查询多多礼金效果数据

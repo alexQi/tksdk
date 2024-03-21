@@ -1,8 +1,8 @@
 package pddddkgoodspromotionurlgenerate
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	json "encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.goods.promotion.url.generate（生成多多进宝推广链接非授权）

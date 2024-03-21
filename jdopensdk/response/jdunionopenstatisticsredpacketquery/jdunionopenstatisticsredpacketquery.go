@@ -1,8 +1,8 @@
 package jdunionopenstatisticsredpacketquery
 
 import (
-	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.statistics.redpacket.query 京享红包效果数据

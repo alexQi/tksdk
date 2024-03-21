@@ -1,8 +1,8 @@
 package jdunionopenorderbonusquery
 
 import (
-	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.order.bonus.query 奖励订单查询接口

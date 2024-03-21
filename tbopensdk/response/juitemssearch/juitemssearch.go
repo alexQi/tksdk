@@ -1,17 +1,17 @@
 package juitemssearch
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.ju.items.search( 聚划算商品搜索接口 )
+// taobao.ju.items.search( 聚划算商品搜索接口 )
 type Response struct {
 	response.TopResponse
 	JuItemsSearchResult Result `json:"ju_items_search_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

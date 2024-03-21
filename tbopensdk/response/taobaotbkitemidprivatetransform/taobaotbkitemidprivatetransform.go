@@ -1,8 +1,8 @@
 package taobaotbkitemidprivatetransform
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.itemid.private.transform( 淘宝客-推广者-商品id转化（二方）（专有） )

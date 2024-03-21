@@ -1,17 +1,17 @@
 package pddddkmemberauthorityquery
 
 import (
-	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/pddopensdk/response"
 )
 
-//pdd.ddk.member.authority.query 查询是否绑定备案
+// pdd.ddk.member.authority.query 查询是否绑定备案
 type Response struct {
 	response2.TopResponse
 	AuthorityQueryResponse AuthorityQueryResponse `json:"authority_query_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

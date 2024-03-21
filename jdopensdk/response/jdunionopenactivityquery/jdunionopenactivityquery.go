@@ -1,8 +1,8 @@
 package jdunionopenactivityquery
 
 import (
-	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.activity.query 提供联盟官方活动查询

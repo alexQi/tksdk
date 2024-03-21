@@ -1,17 +1,17 @@
 package shopgetbytitle
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.shop.getbytitle( 根据店铺名称获取店铺信息 )
+// taobao.shop.getbytitle( 根据店铺名称获取店铺信息 )
 type Response struct {
 	response.TopResponse
 	ShopGetbytitleResult Result `json:"shop_getbytitle_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

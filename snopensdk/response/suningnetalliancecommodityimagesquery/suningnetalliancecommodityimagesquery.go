@@ -1,8 +1,8 @@
 package suningnetalliancecommodityimagesquery
 
 import (
-	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/snopensdk/response"
 )
 
 // suning.netalliance.commodityimages.query 商品图文详情查询

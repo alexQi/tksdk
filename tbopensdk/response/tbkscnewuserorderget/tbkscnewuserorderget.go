@@ -1,8 +1,8 @@
 package tbkscnewuserorderget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.newuser.tborder.get( 淘宝客新用户订单API--社交 )

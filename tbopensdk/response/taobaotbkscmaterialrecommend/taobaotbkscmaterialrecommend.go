@@ -3,7 +3,7 @@ package taobaotbkscmaterialrecommend
 import (
 	"encoding/json"
 
-	"alexQi/tksdk/tbopensdk/response"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.material.recommend( 淘宝客-服务商-物料精选升级版 )

@@ -1,8 +1,8 @@
 package tbkspreadget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.spread.get( 物料传播方式获取 )

@@ -1,8 +1,8 @@
 package tbkjutqgget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.ju.tqg.get( 淘抢购api )

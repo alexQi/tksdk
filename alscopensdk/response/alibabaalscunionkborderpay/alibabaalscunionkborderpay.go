@@ -1,9 +1,9 @@
 package alibabaalscunionkborderpay
 
 import (
-	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/alexQi/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.order.pay( openapi预下单订单支付 )

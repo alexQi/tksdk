@@ -1,8 +1,8 @@
 package pddddklotteryurlgen
 
 import (
-	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // pdd.ddk.lottery.url.gen多多客生成转盘抽免单url

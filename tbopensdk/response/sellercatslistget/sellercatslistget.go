@@ -1,17 +1,17 @@
 package sellercatslistget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.sellercats.list.get( 获取前台展示的店铺内卖家自定义商品类目 )
+// taobao.sellercats.list.get( 获取前台展示的店铺内卖家自定义商品类目 )
 type Response struct {
 	response.TopResponse
 	SellercatsListGetResult Result `json:"sellercats_list_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

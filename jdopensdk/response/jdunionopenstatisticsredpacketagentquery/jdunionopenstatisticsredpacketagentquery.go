@@ -1,8 +1,8 @@
 package jdunionopenstatisticsredpacketagentquery
 
 import (
-	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.statistics.redpacket.agent.query 工具商查询帮助其他推客转的链接的红包发放数据

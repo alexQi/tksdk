@@ -1,8 +1,8 @@
 package pddddkoauthcashgiftcreate
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.oauth.cashgift.create创建多多礼金

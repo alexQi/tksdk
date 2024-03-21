@@ -1,8 +1,8 @@
 package comvipadpapiopenserviceunionorderserviceorderlistwithoauth
 
 import (
-	response2 "alexQi/tksdk/vipopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/vipopensdk/response"
 )
 
 // com.vip.adp.api.open.service.UnionOrderService 获取订单信息列表-需要oauth授权

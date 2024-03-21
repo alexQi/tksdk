@@ -1,17 +1,17 @@
 package tbkitemrecommendget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.item.recommend.get( 淘宝客商品关联推荐查询 )
+// taobao.tbk.item.recommend.get( 淘宝客商品关联推荐查询 )
 type Response struct {
 	response.TopResponse
 	TbkItemRecommendGetResult Result `json:"tbk_item_recommend_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

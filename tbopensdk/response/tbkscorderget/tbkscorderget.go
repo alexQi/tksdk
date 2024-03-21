@@ -1,17 +1,17 @@
 package tbkscorderget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.sc.tborder.get( 淘宝客订单查询 - 社交 )
+// taobao.tbk.sc.tborder.get( 淘宝客订单查询 - 社交 )
 type Response struct {
 	response.TopResponse
 	TbkScOrderGetResult Result `json:"tbk_sc_order_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

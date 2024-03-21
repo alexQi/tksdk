@@ -1,17 +1,17 @@
 package tbkscpublisherinfosave
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.sc.publisher.info.save( 淘宝客渠道信息备案 - 社交 )
+// taobao.tbk.sc.publisher.info.save( 淘宝客渠道信息备案 - 社交 )
 type Response struct {
 	response.TopResponse
 	TbkScPublisherInfoSaveResult ResponseClass `json:"tbk_sc_publisher_info_save_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

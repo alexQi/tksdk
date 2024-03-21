@@ -1,8 +1,8 @@
 package suningnetalliancehoistinglinkquery
 
 import (
-	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/snopensdk/response"
 )
 
 // suning.netalliance.hoistinglink.query 获取吊起链接接口

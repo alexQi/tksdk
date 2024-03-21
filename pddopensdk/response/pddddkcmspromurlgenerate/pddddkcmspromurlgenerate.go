@@ -1,17 +1,17 @@
 package pddddkcmspromurlgenerate
 
 import (
-	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/pddopensdk/response"
 )
 
-//pdd.ddk.cms.prom.url.generate生成商城-频道推广链接
+// pdd.ddk.cms.prom.url.generate生成商城-频道推广链接
 type Response struct {
 	response2.TopResponse
 	CMSPromotionURLGenerateResponse CMSPromotionURLGenerateResponse `json:"cms_promotion_url_generate_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

@@ -1,17 +1,17 @@
 package tbkscactivitylinktoolget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.sc.activitylink.toolget( 淘宝联盟官方活动推广API-工具 )
+// taobao.tbk.sc.activitylink.toolget( 淘宝联盟官方活动推广API-工具 )
 type Response struct {
 	response.TopResponse
 	TbkScActivitylinkToolgetResult Result `json:"tbk_sc_activitylink_toolget_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

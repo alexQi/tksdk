@@ -1,17 +1,17 @@
 package shopcatslistget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.shopcats.list.get( 获取前台展示的店铺类目 )
+// taobao.shopcats.list.get( 获取前台展示的店铺类目 )
 type Response struct {
 	response.TopResponse
 	ShopcatsListGetResult Result `json:"shopcats_list_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

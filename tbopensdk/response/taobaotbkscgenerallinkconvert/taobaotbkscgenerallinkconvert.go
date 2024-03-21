@@ -1,8 +1,8 @@
 package taobaotbkscgenerallinkconvert
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.general.link.convert( 淘宝客-服务商-万能转链 )

@@ -1,9 +1,9 @@
 package alibabaalscunionkbitempromotionsharecreate
 
 import (
-	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/alexQi/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.item.promotion.share.create( 本地生活媒体创建商品推广链接 )

@@ -1,8 +1,8 @@
 package suningnetallianceextensionlinkget
 
 import (
-	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/snopensdk/response"
 )
 
 // suning.netalliance.extensionlink.get 商品和券二合一接口

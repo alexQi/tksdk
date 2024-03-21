@@ -1,8 +1,8 @@
 package suningnetallianceappletextensionlinkget
 
 import (
-	"alexQi/tksdk/snopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/snopensdk/response"
 )
 
 // suning.netalliance.appletextensionlink.get 商品和券二合一（小程序）

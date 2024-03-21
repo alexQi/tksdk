@@ -1,8 +1,8 @@
 package jdunionopencouponquery
 
 import (
-	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.coupon.query 通过领券链接查询优惠券的平台、面额、期限、可用状态、剩余数量等详细信息

@@ -1,17 +1,17 @@
 package tbktpwdconvert
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.tpwd.convert( 淘口令转链 )
+// taobao.tbk.tpwd.convert( 淘口令转链 )
 type Response struct {
 	response.TopResponse
 	TbkTpwdConvertResult Result `json:"tbk_tpwd_convert_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

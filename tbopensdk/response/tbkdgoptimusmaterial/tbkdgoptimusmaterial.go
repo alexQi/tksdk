@@ -1,8 +1,8 @@
 package tbkdgoptimusmaterial
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.dg.optimus.material( 淘宝客物料下行-导购 )

@@ -1,9 +1,9 @@
 package alibabaalscunionkbstorequery
 
 import (
-	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/alexQi/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.store.query( 本地联盟口碑商户列表 )

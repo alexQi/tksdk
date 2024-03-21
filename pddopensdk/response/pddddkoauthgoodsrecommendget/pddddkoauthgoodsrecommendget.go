@@ -1,8 +1,8 @@
 package pddddkoauthgoodsrecommendget
 
 import (
-	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.oauth.goods.recommend.get运营频道商品查询API

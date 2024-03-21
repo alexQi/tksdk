@@ -1,17 +1,17 @@
 package wirelesssharetpwdquery
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.wireless.share.tpwd.query( 查询解析淘口令 )
+// taobao.wireless.share.tpwd.query( 查询解析淘口令 )
 type Response struct {
 	response.TopResponse
 	WirelessShareTpwdQueryResult Result `json:"wireless_share_tpwd_query_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

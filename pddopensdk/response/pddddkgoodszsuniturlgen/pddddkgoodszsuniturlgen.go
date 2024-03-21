@@ -1,8 +1,8 @@
 package pddddkgoodszsuniturlgen
 
 import (
-	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
+	response2 "github.com/alexQi/tksdk/pddopensdk/response"
 )
 
 // pdd.ddk.goods.zs.unit.url.gen多多进宝转链接口

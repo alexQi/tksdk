@@ -1,17 +1,17 @@
 package tbkscoptimusmaterial
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.sc.optimus.material( 淘宝客擎天柱通用物料API - 社交 )
+// taobao.tbk.sc.optimus.material( 淘宝客擎天柱通用物料API - 社交 )
 type Response struct {
 	response.TopResponse
 	TbkScOptimusMaterialResult Result `json:"tbk_sc_optimus_material_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

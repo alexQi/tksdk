@@ -1,9 +1,9 @@
 package tbkdgvegastljcreate
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.dg.vegas.tlj.create( 淘宝客-推广者-淘礼金创建 )

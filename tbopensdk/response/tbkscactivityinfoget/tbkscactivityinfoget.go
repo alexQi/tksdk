@@ -1,17 +1,17 @@
 package tbkscactivityinfoget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.sc.activity.info.get( 淘宝客-服务商-官方活动信息获取 新接口 )
+// taobao.tbk.sc.activity.info.get( 淘宝客-服务商-官方活动信息获取 新接口 )
 type Response struct {
 	response.TopResponse
 	TbkScActivityInfoGetResponseResult ResponseResult `json:"tbk_sc_activity_info_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

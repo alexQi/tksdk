@@ -1,17 +1,17 @@
 package tbkscinvitecodeget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.sc.invitecode.get( 淘宝客邀请码生成-社交 )
+// taobao.tbk.sc.invitecode.get( 淘宝客邀请码生成-社交 )
 type Response struct {
 	response.TopResponse
 	TbkScInvitecodeGetResult Result `json:"tbk_sc_invitecode_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

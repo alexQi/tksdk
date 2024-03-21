@@ -3,7 +3,7 @@ package taobaotbkscmaterialoptionalupgrade
 import (
 	"encoding/json"
 
-	"alexQi/tksdk/tbopensdk/response"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.sc.material.optional.upgrade( 淘宝客-服务商-物料搜索升级版 )

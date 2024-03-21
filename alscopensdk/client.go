@@ -1,10 +1,10 @@
 package alscopensdk
 
 import (
-	utils2 "alexQi/tksdk/utils"
 	"context"
 	"errors"
 	"fmt"
+	utils2 "github.com/alexQi/tksdk/utils"
 	"io/ioutil"
 	"net"
 	"net/http"

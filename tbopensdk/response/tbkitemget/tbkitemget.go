@@ -1,8 +1,8 @@
 package tbkitemget
 
 import (
-	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
+	"github.com/alexQi/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.item.get( 淘宝客商品查询 )

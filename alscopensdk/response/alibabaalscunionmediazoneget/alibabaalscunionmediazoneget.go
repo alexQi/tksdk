@@ -1,9 +1,9 @@
 package alibabaalscunionmediazoneget
 
 import (
-	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/alexQi/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.media.zone.get( 本地生活媒体推广位查询 )
