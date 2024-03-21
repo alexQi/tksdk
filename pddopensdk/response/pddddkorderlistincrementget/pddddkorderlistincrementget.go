@@ -1,17 +1,17 @@
 package pddddkorderlistincrementget
 
 import (
+	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/pddopensdk/response"
 )
 
-//pdd.ddk.order.list.increment.get（最后更新时间段增量同步推广订单信息）
+// pdd.ddk.order.list.increment.get（最后更新时间段增量同步推广订单信息）
 type Response struct {
 	response2.TopResponse
 	OrderListGetResponse OrderListGetResponse `json:"order_list_get_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

@@ -1,17 +1,17 @@
 package pddddkgoodszsuniturlgen
 
 import (
+	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/pddopensdk/response"
 )
 
-//pdd.ddk.goods.zs.unit.url.gen多多进宝转链接口
+// pdd.ddk.goods.zs.unit.url.gen多多进宝转链接口
 type Response struct {
 	response2.TopResponse
 	GoodsZsUnitGenerateResponse GoodsZsUnitGenerateResponse `json:"goods_zs_unit_generate_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

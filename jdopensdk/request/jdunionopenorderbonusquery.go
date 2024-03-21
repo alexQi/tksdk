@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenOrderBonusQueryRequest jd.union.open.order.bonus.query 奖励订单查询接口
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.order.bonus.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.order.bonus.query
 type JdUnionOpenOrderBonusQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

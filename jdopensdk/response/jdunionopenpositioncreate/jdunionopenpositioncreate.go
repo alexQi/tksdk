@@ -1,8 +1,8 @@
 package jdunionopenpositioncreate
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.position.create 创建推广位【申请】

@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenCouponGiftStopRequest jd.union.open.coupon.gift.stop 礼金停止
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.coupon.gift.stop
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.coupon.gift.stop
 type JdUnionOpenCouponGiftStopRequest struct {
 	Parameters *url.Values //请求参数
 }

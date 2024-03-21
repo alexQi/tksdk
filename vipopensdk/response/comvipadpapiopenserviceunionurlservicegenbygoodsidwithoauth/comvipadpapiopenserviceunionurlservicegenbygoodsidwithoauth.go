@@ -1,8 +1,8 @@
 package comvipadpapiopenserviceunionurlservicegenbygoodsidwithoauth
 
 import (
+	response2 "alexQi/tksdk/vipopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/vipopensdk/response"
 )
 
 //com.vip.adp.api.open.service.UnionUrlService 根据商品id生成联盟链接-需要oauth授权

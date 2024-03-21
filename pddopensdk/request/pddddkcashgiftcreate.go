@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//pdd.ddk.cashgift.create创建多多礼金
-//https://open.pinduoduo.com/application/document/api?id=pdd.ddk.cashgift.create
+// pdd.ddk.cashgift.create创建多多礼金
+// https://open.pinduoduo.com/application/document/api?id=pdd.ddk.cashgift.create
 type PddDdkCashgiftCreateRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -17,7 +17,7 @@ func (tk *PddDdkCashgiftCreateRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *PddDdkCashgiftCreateRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -25,12 +25,12 @@ func (tk *PddDdkCashgiftCreateRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *PddDdkCashgiftCreateRequest) GetApiName() string {
 	return "pdd.ddk.cashgift.create"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *PddDdkCashgiftCreateRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

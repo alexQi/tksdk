@@ -1,8 +1,8 @@
 package jdunionopengoodsjingfenquery
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.goods.jingfen.query 京粉精选商品查询接口

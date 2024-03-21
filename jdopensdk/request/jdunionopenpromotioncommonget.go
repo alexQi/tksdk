@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenPromotionCommonGetRequest jd.union.open.promotion.common.get 网站/APP来获取的推广链接
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.promotion.common.get
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.promotion.common.get
 type JdUnionOpenPromotionCommonGetRequest struct {
 	Parameters *url.Values //请求参数
 }

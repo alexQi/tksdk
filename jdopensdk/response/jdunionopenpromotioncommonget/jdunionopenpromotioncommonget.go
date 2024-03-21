@@ -1,8 +1,8 @@
 package jdunionopenpromotioncommonget
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.promotion.common.get 网站/APP来获取的推广链接

@@ -1,17 +1,17 @@
 package comvipadpapiopenserviceunionorderserviceorderlistwithoauth
 
 import (
+	response2 "alexQi/tksdk/vipopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/vipopensdk/response"
 )
 
-//com.vip.adp.api.open.service.UnionOrderService 获取订单信息列表-需要oauth授权
+// com.vip.adp.api.open.service.UnionOrderService 获取订单信息列表-需要oauth授权
 type Response struct {
 	response2.TopResponse
 	Result Result `json:"result"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息
@@ -24,10 +24,10 @@ func (t *Response) WrapResult(result string) {
 }
 
 /*
-	orderInfoList	List<OrderInfo>	否			业绩查询响应结果
-	total	Integer	否			业绩总条数
-	page	Integer	否			当前页码
-	pageSize	Integer	否			页面大小
+orderInfoList	List<OrderInfo>	否			业绩查询响应结果
+total	Integer	否			业绩总条数
+page	Integer	否			当前页码
+pageSize	Integer	否			页面大小
 */
 type Result struct {
 	Total         int64           `json:"total"`
@@ -37,26 +37,26 @@ type Result struct {
 }
 
 /*
-	orderSn	String	否			订单号
-	status	Short	否			订单状态:0-不合格，1-待定，2-已完结
-	newCustomer	Short	否			新老客：0-待定，1-新客，2-老客
-	channelTag	String	否			渠道商模式下表示自定义渠道标识；工具商模式下表示pid
-	orderTime	Long	否			下单时间 时间戳 单位毫秒
-	signTime	Long	否			签收时间 时间戳 单位毫秒
-	settledTime	Long	否			结算时间 时间戳 单位毫秒
-	detailList	List<OrderDetailInfo>	否			商品明细
-	lastUpdateTime	Long	否			订单上次更新时间 时间戳 单位毫秒
-	settled	Short	否			订单结算状态 0-未结算,1-已结算
-	selfBuy	Integer	否			是否自推自买 0-否，1-是
-	orderSubStatusName	String	否			订单子状态：流转状态-支持状态：（已下单、已付款、已签收、待结算、已结算、已失效）
-	commission	String	否			商品总佣金:单位元
-	afterSaleChangeCommission	String	否			售后订单佣金变动：仅在订单完结之后发生售后行为时返回
-	afterSaleChangeGoodsCount	Integer	否			售后订单总商品数量变动：仅在订单完结之后发生售后行为时返回
-	commissionEnterTime	Long	否			入账时间，时间戳，单位毫秒
-	orderSource	String	否			订单来源
-	pid	String	否			推广PID:目前等同于channelTag
-	isPrepay	Integer	否			是否预付订单:0-否，1-是
-	statParam	String	否			自定义统计参数
+orderSn	String	否			订单号
+status	Short	否			订单状态:0-不合格，1-待定，2-已完结
+newCustomer	Short	否			新老客：0-待定，1-新客，2-老客
+channelTag	String	否			渠道商模式下表示自定义渠道标识；工具商模式下表示pid
+orderTime	Long	否			下单时间 时间戳 单位毫秒
+signTime	Long	否			签收时间 时间戳 单位毫秒
+settledTime	Long	否			结算时间 时间戳 单位毫秒
+detailList	List<OrderDetailInfo>	否			商品明细
+lastUpdateTime	Long	否			订单上次更新时间 时间戳 单位毫秒
+settled	Short	否			订单结算状态 0-未结算,1-已结算
+selfBuy	Integer	否			是否自推自买 0-否，1-是
+orderSubStatusName	String	否			订单子状态：流转状态-支持状态：（已下单、已付款、已签收、待结算、已结算、已失效）
+commission	String	否			商品总佣金:单位元
+afterSaleChangeCommission	String	否			售后订单佣金变动：仅在订单完结之后发生售后行为时返回
+afterSaleChangeGoodsCount	Integer	否			售后订单总商品数量变动：仅在订单完结之后发生售后行为时返回
+commissionEnterTime	Long	否			入账时间，时间戳，单位毫秒
+orderSource	String	否			订单来源
+pid	String	否			推广PID:目前等同于channelTag
+isPrepay	Integer	否			是否预付订单:0-否，1-是
+statParam	String	否			自定义统计参数
 */
 type OrderInfoList struct {
 	OrderSource               string       `json:"orderSource"`
@@ -80,21 +80,21 @@ type OrderInfoList struct {
 }
 
 /*
-	goodsId	String	否			商品id
-	goodsName	String	否			商品名称
-	goodsThumb	String	否			商品缩略图
-	goodsCount	Integer	否			商品数量
-	commissionTotalCost	String	否			商品计佣金额(元,保留两位小数)
-	commissionRate	String	否			商品佣金比例(%)
-	commission	String	否			商品佣金金额(元,保留两位小数)
-	commCode	String	否			佣金编码：对应商品二级分类
-	commName	String	否			佣金方案名称
-	orderSource	String	否			订单来源
-	afterSaleInfo	List<AfterSaleDetailInfo>	否			商品售后信息
-	sizeId	String	否			商品尺码：2019.01.01之后可用
-	status	Short	否			商品状态：0-不合格，1-待定，2-已完结
-	brandStoreSn	String	否			品牌编号
-	brandStoreName	String	否			品牌名称
+goodsId	String	否			商品id
+goodsName	String	否			商品名称
+goodsThumb	String	否			商品缩略图
+goodsCount	Integer	否			商品数量
+commissionTotalCost	String	否			商品计佣金额(元,保留两位小数)
+commissionRate	String	否			商品佣金比例(%)
+commission	String	否			商品佣金金额(元,保留两位小数)
+commCode	String	否			佣金编码：对应商品二级分类
+commName	String	否			佣金方案名称
+orderSource	String	否			订单来源
+afterSaleInfo	List<AfterSaleDetailInfo>	否			商品售后信息
+sizeId	String	否			商品尺码：2019.01.01之后可用
+status	Short	否			商品状态：0-不合格，1-待定，2-已完结
+brandStoreSn	String	否			品牌编号
+brandStoreName	String	否			品牌名称
 */
 type DetailList struct {
 	CommissionTotalCost string          `json:"commissionTotalCost"`

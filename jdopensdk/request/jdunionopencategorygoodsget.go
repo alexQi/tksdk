@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenCategoryGoodsGetRequest jd.union.open.category.goods.get 根据商品的父类目id查询子类目id信息
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.category.goods.get
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.category.goods.get
 type JdUnionOpenCategoryGoodsGetRequest struct {
 	Parameters *url.Values //请求参数
 }

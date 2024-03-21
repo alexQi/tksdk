@@ -1,8 +1,8 @@
 package tbkitemconvert
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.item.convert( 淘宝客商品链接转换 )

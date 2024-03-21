@@ -1,12 +1,12 @@
 package request
 
 import (
-	utils "github.com/mimicode/tksdk/utils"
+	utils "alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.sc.shop.convert( 淘宝客-服务商-店铺链接转换 )
-//https://open.taobao.com/api.htm?docId=43878&docType=2&scopeId=16403
+// taobao.tbk.sc.shop.convert( 淘宝客-服务商-店铺链接转换 )
+// https://open.taobao.com/api.htm?docId=43878&docType=2&scopeId=16403
 type TbkScShopConvertRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -19,7 +19,7 @@ func (tk *TbkScShopConvertRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkScShopConvertRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -27,12 +27,12 @@ func (tk *TbkScShopConvertRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkScShopConvertRequest) GetApiName() string {
 	return "taobao.tbk.sc.shop.convert"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkScShopConvertRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.shop.recommend.get( 淘宝客店铺关联推荐查询 )
-//http://open.taobao.com/api.htm?docId=24522&docType=2&scopeId=11655
+// taobao.tbk.shop.recommend.get( 淘宝客店铺关联推荐查询 )
+// http://open.taobao.com/api.htm?docId=24522&docType=2&scopeId=11655
 type TbkShopRecommendGetRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -18,7 +18,7 @@ func (tk *TbkShopRecommendGetRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkShopRecommendGetRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -26,12 +26,12 @@ func (tk *TbkShopRecommendGetRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkShopRecommendGetRequest) GetApiName() string {
 	return "taobao.tbk.shop.recommend.get"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkShopRecommendGetRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

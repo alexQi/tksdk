@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenGoodsPromotiongoodsinfoQueryRequest jd.union.open.goods.promotiongoodsinfo.query 通过SKUID查询推广商品
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.promotiongoodsinfo.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.promotiongoodsinfo.query
 type JdUnionOpenGoodsPromotiongoodsinfoQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

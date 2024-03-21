@@ -1,17 +1,17 @@
 package suningnetallianceappletextensionlinkget
 
 import (
+	"alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/snopensdk/response"
 )
 
-//suning.netalliance.appletextensionlink.get 商品和券二合一（小程序）
+// suning.netalliance.appletextensionlink.get 商品和券二合一（小程序）
 type Response struct {
 	response.TopResponse
 	SnResponseContent SnResponseContent `json:"sn_responseContent"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

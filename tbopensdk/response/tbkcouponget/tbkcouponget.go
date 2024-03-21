@@ -1,8 +1,8 @@
 package tbkcouponget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.coupon.get( 阿里妈妈推广券信息查询 )

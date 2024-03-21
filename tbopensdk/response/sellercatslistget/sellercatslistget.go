@@ -1,8 +1,8 @@
 package sellercatslistget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.sellercats.list.get( 获取前台展示的店铺内卖家自定义商品类目 )

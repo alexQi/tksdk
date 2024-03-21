@@ -1,17 +1,17 @@
 package alscopensdk
 
 import (
+	"alexQi/tksdk/alscopensdk/request"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionelemepromotionofficialactivityget"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionelemepromotionstorepromotionget"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionelemepromotionstorepromotionquery"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionkbitempromotion"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionkbitempromotionfilterlist"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionkbitemquery"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionmediazoneadd"
+	"alexQi/tksdk/alscopensdk/response/alibabaalscunionmediazoneget"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/request"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionelemepromotionofficialactivityget"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionelemepromotionstorepromotionget"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionelemepromotionstorepromotionquery"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionkbitempromotion"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionkbitempromotionfilterlist"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionkbitemquery"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionmediazoneadd"
-	"github.com/mimicode/tksdk/alscopensdk/response/alibabaalscunionmediazoneget"
 
 	"io/ioutil"
 	"os"

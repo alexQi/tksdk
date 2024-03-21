@@ -1,8 +1,8 @@
 package jdunionopengoodsbigfieldquery
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.goods.bigfield.query 商品详情查询接口,大字段信息

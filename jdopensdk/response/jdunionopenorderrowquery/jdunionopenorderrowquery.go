@@ -1,8 +1,8 @@
 package jdunionopenorderrowquery
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.order.row.query 查询推广订单及佣金信息

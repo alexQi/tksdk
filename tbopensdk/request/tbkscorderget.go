@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.sc.tborder.get( 淘宝客订单查询 - 社交 )
-//http://open.taobao.com/api.htm?docId=38078&docType=2&scopeId=14814
+// taobao.tbk.sc.tborder.get( 淘宝客订单查询 - 社交 )
+// http://open.taobao.com/api.htm?docId=38078&docType=2&scopeId=14814
 type TbkScOrderGetRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -16,7 +16,7 @@ func (tk *TbkScOrderGetRequest) CheckParameters() {
 	utils.CheckNotNull(tk.Parameters.Get("start_time"), "start_time")
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkScOrderGetRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -24,12 +24,12 @@ func (tk *TbkScOrderGetRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkScOrderGetRequest) GetApiName() string {
 	return "taobao.tbk.sc.tborder.get"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkScOrderGetRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

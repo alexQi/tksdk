@@ -1,8 +1,8 @@
 package tbkscshopconvert
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.sc.shop.convert( 淘宝客-服务商-店铺链接转换 )

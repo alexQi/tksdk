@@ -1,8 +1,8 @@
 package wirelesssharetpwdquery
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.wireless.share.tpwd.query( 查询解析淘口令 )

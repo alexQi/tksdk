@@ -1,8 +1,8 @@
 package suningnetalliancecouponinfoquery
 
 import (
+	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/snopensdk/response"
 )
 
 //suning.netalliance.couponinfo.query 查询券领用情况

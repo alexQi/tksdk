@@ -1,8 +1,8 @@
 package jdunionopencoupongiftstop
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.coupon.gift.stop 礼金停止

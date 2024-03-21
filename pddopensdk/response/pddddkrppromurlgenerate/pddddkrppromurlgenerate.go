@@ -1,8 +1,8 @@
 package pddddkrppromurlgenerate
 
 import (
+	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/pddopensdk/response"
 )
 
 //pdd.ddk.rp.prom.url.generate生成营销工具推广链接

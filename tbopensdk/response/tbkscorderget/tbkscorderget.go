@@ -1,8 +1,8 @@
 package tbkscorderget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.sc.tborder.get( 淘宝客订单查询 - 社交 )

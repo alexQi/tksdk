@@ -1,8 +1,8 @@
 package tbktpwdcreate
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.tpwd.create( 淘宝客淘口令 )

@@ -1,8 +1,8 @@
 package comvipadpapiopenserviceunionorderservicerefundorderlistwithoauth
 
 import (
+	response2 "alexQi/tksdk/vipopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/vipopensdk/response"
 )
 
 //com.vip.adp.api.open.service.UnionOrderService 维权订单总收益需要扣除该接口返回-需要oauth授权

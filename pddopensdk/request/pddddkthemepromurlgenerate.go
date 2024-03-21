@@ -1,12 +1,12 @@
 package request
 
 import (
-	utils2 "github.com/mimicode/tksdk/utils"
+	utils2 "alexQi/tksdk/utils"
 	"net/url"
 )
 
-//pdd.ddk.theme.prom.url.generate（多多进宝主题推广链接生成
-//https://open.pinduoduo.com/#/apidocument/port?id=pdd.ddk.resource.url.gen
+// pdd.ddk.theme.prom.url.generate（多多进宝主题推广链接生成
+// https://open.pinduoduo.com/#/apidocument/port?id=pdd.ddk.resource.url.gen
 type PddDdkThemePromUrlGenerateRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -17,7 +17,7 @@ func (tk *PddDdkThemePromUrlGenerateRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *PddDdkThemePromUrlGenerateRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -25,12 +25,12 @@ func (tk *PddDdkThemePromUrlGenerateRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *PddDdkThemePromUrlGenerateRequest) GetApiName() string {
 	return "pdd.ddk.theme.prom.url.generate"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *PddDdkThemePromUrlGenerateRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

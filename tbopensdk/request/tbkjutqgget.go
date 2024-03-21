@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.ju.tqg.get( 淘抢购api )
-//http://open.taobao.com/api.htm?docId=27543&docType=2&scopeId=11655
+// taobao.tbk.ju.tqg.get( 淘抢购api )
+// http://open.taobao.com/api.htm?docId=27543&docType=2&scopeId=11655
 type TbkJuTqgGetRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -20,7 +20,7 @@ func (tk *TbkJuTqgGetRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkJuTqgGetRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -28,12 +28,12 @@ func (tk *TbkJuTqgGetRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkJuTqgGetRequest) GetApiName() string {
 	return "taobao.tbk.ju.tqg.get"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkJuTqgGetRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

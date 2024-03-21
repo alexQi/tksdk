@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenGoodsMaterialQueryRequest jd.union.open.goods.material.query 猜你喜欢商品推荐
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.material.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.material.query
 type JdUnionOpenGoodsMaterialQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

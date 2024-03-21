@@ -1,9 +1,9 @@
 package alibabaalscunionkbcpxpositiveorderget
 
 import (
+	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kbcpx.positive.order.get( 本地生活媒体推广订单明细报表查询 )

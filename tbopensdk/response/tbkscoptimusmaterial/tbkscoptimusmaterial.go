@@ -1,8 +1,8 @@
 package tbkscoptimusmaterial
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.sc.optimus.material( 淘宝客擎天柱通用物料API - 社交 )

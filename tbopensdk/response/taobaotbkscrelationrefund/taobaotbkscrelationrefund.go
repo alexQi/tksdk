@@ -1,8 +1,8 @@
 package taobaotbkscrelationrefund
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.sc.relation.refund( 淘宝客-服务商-维权退款订单查询 )

@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.sc.relation.refund( 淘宝客-服务商-维权退款订单查询 )
-//https://open.taobao.com/api.htm?docId=43874&docType=2&scopeId=16322
+// taobao.tbk.sc.relation.refund( 淘宝客-服务商-维权退款订单查询 )
+// https://open.taobao.com/api.htm?docId=43874&docType=2&scopeId=16322
 type TbkScRelationRefundRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -21,7 +21,7 @@ func (tk *TbkScRelationRefundRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkScRelationRefundRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -29,12 +29,12 @@ func (tk *TbkScRelationRefundRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkScRelationRefundRequest) GetApiName() string {
 	return "taobao.tbk.sc.relation.refund"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkScRelationRefundRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

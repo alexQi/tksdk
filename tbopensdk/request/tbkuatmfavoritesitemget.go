@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.uatm.favorites.item.get( 获取淘宝联盟选品库的宝贝信息 )
-//http://open.taobao.com/api.htm?docId=26619&docType=2&scopeId=11655
+// taobao.tbk.uatm.favorites.item.get( 获取淘宝联盟选品库的宝贝信息 )
+// http://open.taobao.com/api.htm?docId=26619&docType=2&scopeId=11655
 type TbkUatmFavoritesItemGetRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -20,7 +20,7 @@ func (tk *TbkUatmFavoritesItemGetRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkUatmFavoritesItemGetRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -28,12 +28,12 @@ func (tk *TbkUatmFavoritesItemGetRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkUatmFavoritesItemGetRequest) GetApiName() string {
 	return "taobao.tbk.uatm.favorites.item.get"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkUatmFavoritesItemGetRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.privilege.get( 单品券高效转链API )
-//http://open.taobao.com/api.htm?docId=28625&docType=2&scopeId=12403
+// taobao.tbk.privilege.get( 单品券高效转链API )
+// http://open.taobao.com/api.htm?docId=28625&docType=2&scopeId=12403
 type TbkPrivilegeGetRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -20,7 +20,7 @@ func (tk *TbkPrivilegeGetRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkPrivilegeGetRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -28,12 +28,12 @@ func (tk *TbkPrivilegeGetRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkPrivilegeGetRequest) GetApiName() string {
 	return "taobao.tbk.privilege.get"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkPrivilegeGetRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

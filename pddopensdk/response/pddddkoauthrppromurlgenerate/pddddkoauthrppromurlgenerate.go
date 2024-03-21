@@ -1,8 +1,8 @@
 package pddddkoauthrppromurlgenerate
 
 import (
+	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.oauth.rp.prom.url.generate生成营销工具推广链接

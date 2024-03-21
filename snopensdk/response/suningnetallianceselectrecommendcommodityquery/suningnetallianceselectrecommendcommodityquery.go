@@ -1,8 +1,8 @@
 package suningnetallianceselectrecommendcommodityquery
 
 import (
+	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/snopensdk/response"
 )
 
 //suning.netalliance.selectrecommendcommodity.query 商品精选接口

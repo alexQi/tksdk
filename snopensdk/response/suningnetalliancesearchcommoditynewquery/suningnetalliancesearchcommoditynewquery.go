@@ -1,8 +1,8 @@
 package suningnetalliancesearchcommoditynewquery
 
 import (
+	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/snopensdk/response"
 )
 
 //suning.netalliance.searchcommoditynew.query 关键字商品查询接口(新)

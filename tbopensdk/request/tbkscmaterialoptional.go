@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.sc.material.optional( 通用物料搜索API )
-//http://open.taobao.com/api.htm?docId=35263&docType=2&scopeId=13991
+// taobao.tbk.sc.material.optional( 通用物料搜索API )
+// http://open.taobao.com/api.htm?docId=35263&docType=2&scopeId=13991
 type TbkScMaterialOptionalRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -22,7 +22,7 @@ func (tk *TbkScMaterialOptionalRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkScMaterialOptionalRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -30,12 +30,12 @@ func (tk *TbkScMaterialOptionalRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkScMaterialOptionalRequest) GetApiName() string {
 	return "taobao.tbk.sc.material.optional"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkScMaterialOptionalRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

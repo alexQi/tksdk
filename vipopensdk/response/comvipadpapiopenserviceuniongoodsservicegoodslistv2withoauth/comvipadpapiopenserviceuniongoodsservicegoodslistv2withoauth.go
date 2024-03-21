@@ -1,8 +1,8 @@
 package comvipadpapiopenserviceuniongoodsservicegoodslistv2withoauth
 
 import (
+	"alexQi/tksdk/vipopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/vipopensdk/response"
 )
 
 // com.vip.adp.api.open.service.UnionGoodsService 获取联盟在推商品列表V2-需要oauth授权

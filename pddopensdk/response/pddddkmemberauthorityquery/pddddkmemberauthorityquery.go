@@ -1,8 +1,8 @@
 package pddddkmemberauthorityquery
 
 import (
+	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/pddopensdk/response"
 )
 
 //pdd.ddk.member.authority.query 查询是否绑定备案

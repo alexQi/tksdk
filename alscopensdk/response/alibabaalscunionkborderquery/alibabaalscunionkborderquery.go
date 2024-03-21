@@ -1,9 +1,9 @@
 package alibabaalscunionkborderquery
 
 import (
+	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.order.query( openapi订单查询 )

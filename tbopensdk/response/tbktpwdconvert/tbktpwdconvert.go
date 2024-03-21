@@ -1,8 +1,8 @@
 package tbktpwdconvert
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.tpwd.convert( 淘口令转链 )

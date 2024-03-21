@@ -1,17 +1,17 @@
 package tbkdgnewuserordersum
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.dg.newuser.tborder.sum( 拉新活动汇总API--导购 )
+// taobao.tbk.dg.newuser.tborder.sum( 拉新活动汇总API--导购 )
 type Response struct {
 	response.TopResponse
 	TbkDgNewuserOrderSumResult Result `json:"tbk_dg_newuser_order_sum_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息
@@ -33,8 +33,8 @@ type ResponseResults struct {
 }
 
 type Data struct {
-	HasNext  bool                            `json:"has_next"`
-	PageNo   int64                           `json:"page_no"`
+	HasNext  bool        `json:"has_next"`
+	PageNo   int64       `json:"page_no"`
 	PageSize int64       `json:"page_size"`
 	Results  DataResults `json:"results"`
 }

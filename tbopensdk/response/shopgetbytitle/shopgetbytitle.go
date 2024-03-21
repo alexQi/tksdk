@@ -1,8 +1,8 @@
 package shopgetbytitle
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.shop.getbytitle( 根据店铺名称获取店铺信息 )

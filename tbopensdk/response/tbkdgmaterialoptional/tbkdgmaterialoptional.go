@@ -1,8 +1,8 @@
 package tbkdgmaterialoptional
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 // taobao.tbk.dg.material.optional( 通用物料搜索API（导购） )

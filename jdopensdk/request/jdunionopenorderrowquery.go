@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenOrderRowQueryRequest jd.union.open.order.row.query 查询推广订单及佣金信息
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.order.row.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.order.row.query
 type JdUnionOpenOrderRowQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

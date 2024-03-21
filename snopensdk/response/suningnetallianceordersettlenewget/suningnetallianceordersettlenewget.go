@@ -1,8 +1,8 @@
 package suningnetallianceordersettlenewget
 
 import (
+	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/snopensdk/response"
 )
 
 //suning.netalliance.ordersettlenew.get 订单结算信息接口

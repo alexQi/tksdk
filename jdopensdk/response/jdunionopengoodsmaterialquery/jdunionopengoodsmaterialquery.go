@@ -1,8 +1,8 @@
 package jdunionopengoodsmaterialquery
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.goods.material.query 猜你喜欢商品推荐

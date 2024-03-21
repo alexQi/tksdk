@@ -1,17 +1,17 @@
 package suningnetalliancehoistinglinkquery
 
 import (
+	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/snopensdk/response"
 )
 
-//suning.netalliance.hoistinglink.query 获取吊起链接接口
+// suning.netalliance.hoistinglink.query 获取吊起链接接口
 type Response struct {
 	response2.TopResponse
 	SnResponseContent SnResponseContent `json:"sn_responseContent"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

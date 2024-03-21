@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenPositionCreateRequest jd.union.open.position.create 创建推广位【申请】
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.position.create
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.position.create
 type JdUnionOpenPositionCreateRequest struct {
 	Parameters *url.Values //请求参数
 }

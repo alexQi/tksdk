@@ -1,9 +1,9 @@
 package alibabaalscunionelemepromotionofficialactivityget
 
 import (
+	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.eleme.promotion.officialactivity.get( 本地联盟饿了么推广官方活动查询 )

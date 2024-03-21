@@ -1,23 +1,23 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.item.info.get( 淘宝客商品详情（简版） )
-//http://open.taobao.com/api.htm?docId=24518&docType=2
+// taobao.tbk.item.info.get( 淘宝客商品详情（简版） )
+// http://open.taobao.com/api.htm?docId=24518&docType=2
 type TbkItemInfoGetRequest struct {
 	Parameters *url.Values //请求参数
 }
 
-//参数检测
+// 参数检测
 func (tk *TbkItemInfoGetRequest) CheckParameters() {
 	utils.CheckNotNull(tk.Parameters.Get("num_iids"), "num_iids")
 	utils.CheckMaxListSize(tk.Parameters.Get("num_iids"), 40, "num_iids")
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkItemInfoGetRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -25,12 +25,12 @@ func (tk *TbkItemInfoGetRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkItemInfoGetRequest) GetApiName() string {
 	return "taobao.tbk.item.info.get"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkItemInfoGetRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

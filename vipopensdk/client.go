@@ -1,11 +1,11 @@
 package vipopensdk
 
 import (
+	"alexQi/tksdk/utils"
 	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/mimicode/tksdk/utils"
 	"io/ioutil"
 	"net"
 	"net/http"

@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.sc.coupon.realtime.recommend( 好券直播API【社交】 )
-//http://open.taobao.com/api.htm?docId=29820&docType=2&scopeId=12331
+// taobao.tbk.sc.coupon.realtime.recommend( 好券直播API【社交】 )
+// http://open.taobao.com/api.htm?docId=29820&docType=2&scopeId=12331
 type TbkScCouponRealtimeRecommendRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -19,7 +19,7 @@ func (tk *TbkScCouponRealtimeRecommendRequest) CheckParameters() {
 	utils.CheckNumber(tk.Parameters.Get("site_id"), "site_id")
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkScCouponRealtimeRecommendRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -27,12 +27,12 @@ func (tk *TbkScCouponRealtimeRecommendRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkScCouponRealtimeRecommendRequest) GetApiName() string {
 	return "taobao.tbk.sc.coupon.realtime.recommend"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkScCouponRealtimeRecommendRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

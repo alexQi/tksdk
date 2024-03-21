@@ -1,8 +1,8 @@
 package suningnetalliancestorepromotionurlquery
 
 import (
+	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/snopensdk/response"
 )
 
 //suning.netalliance.storepromotionurl.query 获取商品或店铺推广链接接口

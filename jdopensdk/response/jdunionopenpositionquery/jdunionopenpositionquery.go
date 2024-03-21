@@ -1,8 +1,8 @@
 package jdunionopenpositionquery
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.position.query 查询推广位【申请】

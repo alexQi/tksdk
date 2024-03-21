@@ -1,8 +1,8 @@
 package jdunionopenorderagentquery
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.order.agent.query 工具商订单行查询接口

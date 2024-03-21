@@ -1,8 +1,8 @@
 package shopcatslistget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.shopcats.list.get( 获取前台展示的店铺类目 )

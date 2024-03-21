@@ -133,7 +133,7 @@ func createAPI(apiRequest ApiInfo) {
 	}
 	//"taobaoopensdk/utils"
 	APIPARAMCHECK := createMustCheck(apiRequest.CHECKFIELDS)
-	UTIL := `"github.com/mimicode/tksdk/utils"`
+	UTIL := `"alexQi/tksdk/utils"`
 	DIRNAME := strings.ToLower(strings.Replace(apiRequest.APIORGNAME, ".", "", -1)) + strings.ToLower(apiRequest.APIMETHOD)
 	FILENAME := DIRNAME + ".go"
 

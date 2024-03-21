@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.sc.tpwd.convert( 淘宝客-服务商-淘口令解析&转链 )
-//https://open.taobao.com/api.htm?docId=43873&docType=2&scopeId=16401
+// taobao.tbk.sc.tpwd.convert( 淘宝客-服务商-淘口令解析&转链 )
+// https://open.taobao.com/api.htm?docId=43873&docType=2&scopeId=16401
 type TbkScTpwdConvertRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -18,7 +18,7 @@ func (tk *TbkScTpwdConvertRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkScTpwdConvertRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -26,12 +26,12 @@ func (tk *TbkScTpwdConvertRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkScTpwdConvertRequest) GetApiName() string {
 	return "taobao.tbk.sc.tpwd.convert"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkScTpwdConvertRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

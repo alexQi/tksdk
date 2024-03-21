@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.item.convert( 淘宝客商品链接转换 )
-//http://open.taobao.com/api.htm?docId=24516&docType=2&scopeId=11653
+// taobao.tbk.item.convert( 淘宝客商品链接转换 )
+// http://open.taobao.com/api.htm?docId=24516&docType=2&scopeId=11653
 type TbkItemConvertRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -20,7 +20,7 @@ func (tk *TbkItemConvertRequest) CheckParameters() {
 	utils.CheckMaxListSize(tk.Parameters.Get("num_iids"), 40, "num_iids")
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkItemConvertRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -28,12 +28,12 @@ func (tk *TbkItemConvertRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkItemConvertRequest) GetApiName() string {
 	return "taobao.tbk.item.convert"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkItemConvertRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

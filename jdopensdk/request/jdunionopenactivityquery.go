@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenActivityQueryRequest jd.union.open.activity.query 提供联盟官方活动查询
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.activity.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.activity.query
 type JdUnionOpenActivityQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

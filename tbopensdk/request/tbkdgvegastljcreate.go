@@ -1,12 +1,12 @@
 package request
 
 import (
-	utils "github.com/mimicode/tksdk/utils"
+	utils "alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.dg.vegas.tlj.create( 淘宝客-推广者-淘礼金创建 )
-//https://open.taobao.com/api.htm?docId=40173&docType=2
+// taobao.tbk.dg.vegas.tlj.create( 淘宝客-推广者-淘礼金创建 )
+// https://open.taobao.com/api.htm?docId=40173&docType=2
 type TbkDgVegasTljCreateRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -23,7 +23,7 @@ func (tk *TbkDgVegasTljCreateRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkDgVegasTljCreateRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -31,12 +31,12 @@ func (tk *TbkDgVegasTljCreateRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkDgVegasTljCreateRequest) GetApiName() string {
 	return "taobao.tbk.dg.vegas.tlj.create"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkDgVegasTljCreateRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

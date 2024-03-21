@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenStatisticsRedpacketQueryRequest jd.union.open.statistics.redpacket.query 京享红包效果数据
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.statistics.redpacket.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.statistics.redpacket.query
 type JdUnionOpenStatisticsRedpacketQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

@@ -1,8 +1,8 @@
 package tbkuatmfavoritesget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 // Response  taobao.tbk.uatm.favorites.get( 获取淘宝联盟选品库列表 )

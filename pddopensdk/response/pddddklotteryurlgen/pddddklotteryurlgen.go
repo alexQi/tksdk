@@ -1,17 +1,17 @@
 package pddddklotteryurlgen
 
 import (
+	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/pddopensdk/response"
 )
 
-//pdd.ddk.lottery.url.gen多多客生成转盘抽免单url
+// pdd.ddk.lottery.url.gen多多客生成转盘抽免单url
 type Response struct {
 	response2.TopResponse
 	LotteryURLResponse LotteryURLResponse `json:"lottery_url_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

@@ -1,9 +1,9 @@
 package alibabaalscunionkbcommonencrypt
 
 import (
+	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.common.encrypt( 加密方法 )

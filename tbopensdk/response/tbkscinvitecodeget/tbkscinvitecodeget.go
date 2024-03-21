@@ -1,8 +1,8 @@
 package tbkscinvitecodeget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.sc.invitecode.get( 淘宝客邀请码生成-社交 )

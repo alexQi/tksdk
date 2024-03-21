@@ -1,17 +1,17 @@
 package tbkshopconvert
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
-//taobao.tbk.shop.convert( 淘宝客店铺链接转换 )
+// taobao.tbk.shop.convert( 淘宝客店铺链接转换 )
 type Response struct {
 	response.TopResponse
 	TbkShopConvertResult Result `json:"tbk_shop_convert_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

@@ -1,8 +1,8 @@
 package jdunionopenactivityrecommendquery
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.activity.recommend.query 提供联盟官方活动查询

@@ -1,26 +1,26 @@
 package snopensdk
 
 import (
+	request2 "alexQi/tksdk/snopensdk/request"
+	suningnetalliancebacthcustomlinkquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancebacthcustomlinkquery"
+	suningnetalliancecommoditydetailquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancecommoditydetailquery"
+	suningnetalliancecommodityimagesquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancecommodityimagesquery"
+	suningnetalliancecouponinfoquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancecouponinfoquery"
+	suningnetalliancecustompromotionurlquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancecustompromotionurlquery"
+	suningnetallianceextensionlinkget2 "alexQi/tksdk/snopensdk/response/suningnetallianceextensionlinkget"
+	suningnetalliancehoistinglinkquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancehoistinglinkquery"
+	suningnetallianceinverstmentcommodityquery2 "alexQi/tksdk/snopensdk/response/suningnetallianceinverstmentcommodityquery"
+	suningnetalliancemorerecommendget2 "alexQi/tksdk/snopensdk/response/suningnetalliancemorerecommendget"
+	suningnetallianceorderinfoquery2 "alexQi/tksdk/snopensdk/response/suningnetallianceorderinfoquery"
+	suningnetalliancerecommendcommodityquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancerecommendcommodityquery"
+	suningnetalliancesearchcommoditynewquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancesearchcommoditynewquery"
+	suningnetalliancesearchcommodityquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancesearchcommodityquery"
+	suningnetallianceselectrecommendcommodityquery2 "alexQi/tksdk/snopensdk/response/suningnetallianceselectrecommendcommodityquery"
+	suningnetalliancestorepromotionurlquery2 "alexQi/tksdk/snopensdk/response/suningnetalliancestorepromotionurlquery"
+	suningnetalliancetoolselleradd2 "alexQi/tksdk/snopensdk/response/suningnetalliancetoolselleradd"
+	suningnetallianceunioninfomationget2 "alexQi/tksdk/snopensdk/response/suningnetallianceunioninfomationget"
 	"encoding/json"
 	"fmt"
-	request2 "github.com/mimicode/tksdk/snopensdk/request"
-	suningnetalliancebacthcustomlinkquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancebacthcustomlinkquery"
-	suningnetalliancecommoditydetailquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancecommoditydetailquery"
-	suningnetalliancecommodityimagesquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancecommodityimagesquery"
-	suningnetalliancecouponinfoquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancecouponinfoquery"
-	suningnetalliancecustompromotionurlquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancecustompromotionurlquery"
-	suningnetallianceextensionlinkget2 "github.com/mimicode/tksdk/snopensdk/response/suningnetallianceextensionlinkget"
-	suningnetalliancehoistinglinkquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancehoistinglinkquery"
-	suningnetallianceinverstmentcommodityquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetallianceinverstmentcommodityquery"
-	suningnetalliancemorerecommendget2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancemorerecommendget"
-	suningnetallianceorderinfoquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetallianceorderinfoquery"
-	suningnetalliancerecommendcommodityquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancerecommendcommodityquery"
-	suningnetalliancesearchcommoditynewquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancesearchcommoditynewquery"
-	suningnetalliancesearchcommodityquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancesearchcommodityquery"
-	suningnetallianceselectrecommendcommodityquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetallianceselectrecommendcommodityquery"
-	suningnetalliancestorepromotionurlquery2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancestorepromotionurlquery"
-	suningnetalliancetoolselleradd2 "github.com/mimicode/tksdk/snopensdk/response/suningnetalliancetoolselleradd"
-	suningnetallianceunioninfomationget2 "github.com/mimicode/tksdk/snopensdk/response/suningnetallianceunioninfomationget"
 	"io/ioutil"
 	"os"
 	"testing"
@@ -445,7 +445,7 @@ func TestSuningNetallianceOrderinfoQueryRequest(t *testing.T) {
 	}
 }
 
-//相似商品
+// 相似商品
 func TestSuningNetallianceMorerecommendGetRequest(t *testing.T) {
 	client := GetClient()
 	//初始化请求接口信息
@@ -479,7 +479,7 @@ func TestSuningNetallianceMorerecommendGetRequest(t *testing.T) {
 	}
 }
 
-//相似商品
+// 相似商品
 func TestSuningNetallianceSearchcommodityQueryRequest(t *testing.T) {
 	client := GetClient()
 	//初始化请求接口信息
@@ -522,7 +522,7 @@ func TestSuningNetallianceSearchcommodityQueryRequest(t *testing.T) {
 	}
 }
 
-//相似商品
+// 相似商品
 func TestSuningNetallianceCustompromotionurlQueryRequest(t *testing.T) {
 	client := GetClient()
 	//初始化请求接口信息
@@ -552,7 +552,7 @@ func TestSuningNetallianceCustompromotionurlQueryRequest(t *testing.T) {
 	}
 }
 
-//相似商品
+// 相似商品
 func TestSuningNetallianceStorepromotionurlQueryRequest(t *testing.T) {
 	client := GetClient()
 	//初始化请求接口信息
@@ -586,7 +586,7 @@ func TestSuningNetallianceStorepromotionurlQueryRequest(t *testing.T) {
 	}
 }
 
-//相似商品
+// 相似商品
 func TestSuningNetallianceBacthcustomlinkQueryRequest(t *testing.T) {
 	client := GetClient()
 	//初始化请求接口信息

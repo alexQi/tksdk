@@ -1,8 +1,8 @@
 package jdunionopencoupongiftget
 
 import (
+	"alexQi/tksdk/jdopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/jdopensdk/response"
 )
 
 // Response jd.union.open.coupon.gift.get 礼金创建

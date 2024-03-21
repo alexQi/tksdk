@@ -1,8 +1,8 @@
 package pddddkcashgiftcreate
 
 import (
+	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.cashgift.create创建多多礼金

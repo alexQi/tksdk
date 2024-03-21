@@ -1,9 +1,9 @@
 package alibabaalscunionkbbbtitemquery
 
 import (
+	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.bbt.item.query( 本地联盟爆爆团商品列表 )

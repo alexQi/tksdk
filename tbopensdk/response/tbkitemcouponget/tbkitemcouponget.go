@@ -1,8 +1,8 @@
 package tbkitemcouponget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.item.coupon.get( 单品加券检索api )

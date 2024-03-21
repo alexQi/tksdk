@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenStatisticsRedpacketAgentQueryRequest jd.union.open.statistics.redpacket.agent.query 工具商查询帮助其他推客转的链接的红包发放数据
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.statistics.redpacket.agent.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.statistics.redpacket.agent.query
 type JdUnionOpenStatisticsRedpacketAgentQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
-//pdd.ddk.oauth.pid.mediaid.bind批量绑定推广位的媒体id
-//https://open.pinduoduo.com/application/document/api?id=pdd.ddk.oauth.pid.mediaid.bind&permissionId=7
+// pdd.ddk.oauth.pid.mediaid.bind批量绑定推广位的媒体id
+// https://open.pinduoduo.com/application/document/api?id=pdd.ddk.oauth.pid.mediaid.bind&permissionId=7
 type PddDdkOauthPidMediaidBindRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -17,7 +17,7 @@ func (tk *PddDdkOauthPidMediaidBindRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *PddDdkOauthPidMediaidBindRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -25,12 +25,12 @@ func (tk *PddDdkOauthPidMediaidBindRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *PddDdkOauthPidMediaidBindRequest) GetApiName() string {
 	return "pdd.ddk.oauth.pid.mediaid.bind"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *PddDdkOauthPidMediaidBindRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

@@ -1,8 +1,8 @@
 package tbkshopget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.shop.get( 淘宝客店铺查询 )

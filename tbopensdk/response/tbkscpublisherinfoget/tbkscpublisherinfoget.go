@@ -1,8 +1,8 @@
 package tbkscpublisherinfoget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.sc.publisher.info.get( 淘宝客信息查询 - 社交 )

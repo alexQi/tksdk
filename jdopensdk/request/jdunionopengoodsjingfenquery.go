@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenGoodsJingfenQueryRequest jd.union.open.goods.jingfen.query 京粉精选商品查询接口
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.jingfen.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.jingfen.query
 type JdUnionOpenGoodsJingfenQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

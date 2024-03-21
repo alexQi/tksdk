@@ -1,8 +1,8 @@
 package tbkscactivitylinktoolget
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.tbk.sc.activitylink.toolget( 淘宝联盟官方活动推广API-工具 )

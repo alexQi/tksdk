@@ -1,9 +1,9 @@
 package alibabaalscunionkbitemstorerelationquery
 
 import (
+	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.item.store.relation.query( 本地联盟口碑商品门店关系 )

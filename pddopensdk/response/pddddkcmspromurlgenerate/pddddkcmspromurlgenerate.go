@@ -1,8 +1,8 @@
 package pddddkcmspromurlgenerate
 
 import (
+	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/pddopensdk/response"
 )
 
 //pdd.ddk.cms.prom.url.generate生成商城-频道推广链接

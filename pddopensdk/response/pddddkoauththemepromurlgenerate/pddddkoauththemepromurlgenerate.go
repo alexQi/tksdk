@@ -1,8 +1,8 @@
 package pddddkoauththemepromurlgenerate
 
 import (
+	"alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/pddopensdk/response"
 )
 
 // Response pdd.ddk.theme.prom.url.generate（多多进宝主题推广链接生成

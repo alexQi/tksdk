@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenGoodsBigfieldQueryRequest jd.union.open.goods.bigfield.query 商品详情查询接口,大字段信息
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.bigfield.query
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.goods.bigfield.query
 type JdUnionOpenGoodsBigfieldQueryRequest struct {
 	Parameters *url.Values //请求参数
 }

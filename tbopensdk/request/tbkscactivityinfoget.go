@@ -1,12 +1,12 @@
 package request
 
 import (
-	utils "github.com/mimicode/tksdk/utils"
+	utils "alexQi/tksdk/utils"
 	"net/url"
 )
 
-//taobao.tbk.sc.activity.info.get( 淘宝客-服务商-官方活动信息获取 新接口 )
-//https://open.taobao.com/api.htm?docId=48417&docType=2&scopeId=18353
+// taobao.tbk.sc.activity.info.get( 淘宝客-服务商-官方活动信息获取 新接口 )
+// https://open.taobao.com/api.htm?docId=48417&docType=2&scopeId=18353
 type TbkScActivityInfoGetRequest struct {
 	Parameters *url.Values //请求参数
 }
@@ -18,7 +18,7 @@ func (tk *TbkScActivityInfoGetRequest) CheckParameters() {
 
 }
 
-//添加请求参数
+// 添加请求参数
 func (tk *TbkScActivityInfoGetRequest) AddParameter(key, val string) {
 	if tk.Parameters == nil {
 		tk.Parameters = &url.Values{}
@@ -26,12 +26,12 @@ func (tk *TbkScActivityInfoGetRequest) AddParameter(key, val string) {
 	tk.Parameters.Add(key, val)
 }
 
-//返回接口名称
+// 返回接口名称
 func (tk *TbkScActivityInfoGetRequest) GetApiName() string {
 	return "taobao.tbk.sc.activity.info.get"
 }
 
-//返回请求参数
+// 返回请求参数
 func (tk *TbkScActivityInfoGetRequest) GetParameters() url.Values {
 	return *tk.Parameters
 }

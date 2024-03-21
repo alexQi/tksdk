@@ -1,17 +1,17 @@
 package pddddkresourceurlgen
 
 import (
+	response2 "alexQi/tksdk/pddopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/pddopensdk/response"
 )
 
-//pdd.ddk.resource.url.gen（生成多多进宝频道推广）
+// pdd.ddk.resource.url.gen（生成多多进宝频道推广）
 type Response struct {
 	response2.TopResponse
 	ResourceURLResponse ResponseResourceURLResponse `json:"resource_url_response"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

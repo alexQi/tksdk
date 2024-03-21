@@ -1,8 +1,8 @@
 package juitemssearch
 
 import (
+	"alexQi/tksdk/tbopensdk/response"
 	"encoding/json"
-	"github.com/mimicode/tksdk/tbopensdk/response"
 )
 
 //taobao.ju.items.search( 聚划算商品搜索接口 )

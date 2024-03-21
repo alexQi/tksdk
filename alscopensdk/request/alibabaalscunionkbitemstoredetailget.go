@@ -1,8 +1,8 @@
 package request
 
 import (
+	"alexQi/tksdk/utils"
 	"encoding/json"
-	"github.com/mimicode/tksdk/utils"
 	"net/url"
 )
 

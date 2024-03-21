@@ -1,17 +1,17 @@
 package comvipadpapiopenserviceuniongoodsservicegetbygoodsidswithoauth
 
 import (
+	response2 "alexQi/tksdk/vipopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/vipopensdk/response"
 )
 
-//com.vip.adp.api.open.service.UnionGoodsService 获取指定商品id结合的商品信息-需要oauth授权
+// com.vip.adp.api.open.service.UnionGoodsService 获取指定商品id结合的商品信息-需要oauth授权
 type Response struct {
 	response2.TopResponse
 	Result []Result `json:"result"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息

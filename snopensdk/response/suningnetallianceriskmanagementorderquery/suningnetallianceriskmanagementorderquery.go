@@ -1,17 +1,17 @@
 package suningnetallianceriskmanagementorderquery
 
 import (
+	response2 "alexQi/tksdk/snopensdk/response"
 	"encoding/json"
-	response2 "github.com/mimicode/tksdk/snopensdk/response"
 )
 
-//suning.netalliance.riskmanagementorder.query 风控订单查询
+// suning.netalliance.riskmanagementorder.query 风控订单查询
 type Response struct {
 	response2.TopResponse
 	SnResponseContent SnResponseContent `json:"sn_responseContent"`
 }
 
-//解析输出结果
+// 解析输出结果
 func (t *Response) WrapResult(result string) {
 	unmarshal := json.Unmarshal([]byte(result), t)
 	//保存原始信息
@@ -42,10 +42,10 @@ type SnBody struct {
 }
 
 /*
-	orderId	String	2222	订单号
-	orderItemId	String	666	订单行号
-	payTime	String	2019-10-23 10:33:12	支付时间
-	custNum	String	7018222104	推广人会员编码
+orderId	String	2222	订单号
+orderItemId	String	666	订单行号
+payTime	String	2019-10-23 10:33:12	支付时间
+custNum	String	7018222104	推广人会员编码
 */
 type QueryRiskmanagementorder struct {
 	OrderID     string `json:"orderId"`

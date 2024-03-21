@@ -1,9 +1,9 @@
 package alibabaalscunionkbordercreate
 
 import (
+	"alexQi/tksdk/alscopensdk/response"
 	"encoding/json"
 	"fmt"
-	"github.com/mimicode/tksdk/alscopensdk/response"
 )
 
 // Response alibaba.alsc.union.kb.order.create( openapi订单创建 )

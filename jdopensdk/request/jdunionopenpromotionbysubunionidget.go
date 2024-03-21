@@ -1,12 +1,12 @@
 package request
 
 import (
-	"github.com/mimicode/tksdk/utils"
+	"alexQi/tksdk/utils"
 	"net/url"
 )
 
 // JdUnionOpenPromotionBysubunionidGetRequest jd.union.open.promotion.bysubunionid.get 通过商品链接、领券链接、活动链接获取普通推广链接或优惠券二合一推广链接
-//https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.promotion.bysubunionid.get
+// https://union.jd.com/openplatform/api/v2?apiName=jd.union.open.promotion.bysubunionid.get
 type JdUnionOpenPromotionBysubunionidGetRequest struct {
 	Parameters *url.Values //请求参数
 }
